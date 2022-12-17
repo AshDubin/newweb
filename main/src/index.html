@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <link href="/dist/output.css" rel = "stylesheet">
+    <style>
+      body {
+        background: linear-gradient(to bottom, #001568, #45009e);
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        font-family: "Calibri", sans-serif;
+      }
+      .quotes {
+        border-radius: 10px; /* round the corners with a 10px radius */
+        margin: 2em;
+        padding: 1em;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      button {
+        background: none;
+        border: none;
+        padding: 0.5em 1em;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: none;
+      }
+      /* Add some styling for the button and sub menu */
+      .password-button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 0.5em;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .submenu {
+        display: none; /* Hide the sub menu by default */
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        margin: 2em;
+        padding: 1em;
+      }
+      /* Style the password field */
+      input[type="password"] {
+        border: none;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Button to toggle the sub menu -->
+    <button class="password-button" onclick="toggleSubMenu()">Login</button>
+
+    <!-- Submenu -->
+    <div class="submenu" id="submenu">
+      <form action="/login" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Submit">
+      </div>
+
+
+      <p style="font-size:40px">Welcome to my website!</p>
+    <p style="font-size:20px">I'm glad you're here.</p>
+    
+    <p></p><br>
+    <p style="font-size:30px">You can find me on Discord:</p>
+    <p style="font-size:25px">feardubin#9344</p>
+    <button onclick="window.location.href = 'http://discordapp.com/users/787264555847909417';">
+      <img src="https://webstockreview.net/images/discord-icon-png.png" alt="Discord icon">
+    </button>
+  <p></p><br>
+    <p style="font-size:30px">You can also contact me via email at:</p>
+    <p style="font-size:25px">ali@feardubin.com</p>
+    <button onclick="window.location.href = 'mailto:ali@feardubin.com';">
+      <img src="https://th.bing.com/th/id/R.66cdca2a3232dc3ffee6c16b1b39615096?rik=LPgeH3rxBq4QBA&riu=http%3a%2f%2fwww.clintonfitch.com%2fwp-content%2fuploads%2f2018%2f01%2fGmail-Icon.png&ehk=faQcrEq8H976O8CxSZcIBjaMzIGFMSDDtixcpxVRgrc%3d&risl=&pid=ImgRaw&r=0" alt="Email icon">
+    </button>
+  <p></p><br>
+
+    <p style="font-size:30px">You can also contact me on:</p>
+    <p style="font-size:25px">+44 746060 7224</p>
+    <a href="tel:+447460607224">
+      <button>
+        <img src="https://th.bing.com/th/id/R.e2b6e7f9171c1a746b6d89979380f384?rik=AOPD0S7CpIgN9g&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fxenatt%2fthe-circle%2f256%2fApp-Messages-icon.png&ehk=LZZguLFRTtxfQ8ag9rpn6NKBlkFyT95sF40cKZZ%2fRBQ%3d&risl=&pid=ImgRaw&r=0" alt="Phone icon">
+      </button>
+    </a>
+    <p></p><br>
+    <body>
+      <div class="container rounded-lg flex min-l-screen flex-col overflow-hidden bg-blue-900 py-6 sm:py-12 justify-center">
+      <h1 class="text-3x1 font-bold underline">
+          Inspirational Quotes:
+      </h1>
+      <p class="font-sans text-base hover:font-bold hover:text-xl">
+          Nixxune, December 2021, "Hey, lol."
+      </p>
+      <p class="font-sans text-base hover:font-bold hover:text-x1">
+          Iulian Slabu, November 2022, "Something, something, trader mindset."
+      </p>
+      <p class="font-sans text-base hover:font-bold hover:text-xl">
+          Ramin Battaei, January 2020, "When it is warm outside, it is likely summer."
+      </p>
+      <p class="font-sans text-base hover:font-bold hover:text-xl">
+          Kyryl Shishkin, September 2022, "Just hit my stop-loss."
+      </p>
+      <p class="font-sans text-base hover:font-bold hover:text-xl">
+          Maani Milligan, October 2022, "No way - I'm actually in profit!"
+      </p>
+      <p class="font-sans text-base hover:font-bold hover:text-xl">
+          Ramin Battaei, Febuary 2021, "When water falls from the sky, it is raining."
+      </p>
+      <p class="font-sans text-base hover:font-bold hover:text-xl">
+          Kyryl Shishkin, July 2022, "Intel is in a temporary downtrend."
+      </p>
+      <p class="font-sans text-base hover:font-bold hover:text-xl">
+          Ali Movasaghpour, April 2021, "The bus is bussin."
+      </p>
+      <p class="font-sans text-base hover:font-bold hover:text-xl">
+          Ramin Battaei, November 2022, "Somalia."
+      </p>
+      <p class="font-sans text-base hover:font-bold hover:text-xl">
+          Maani Milligan, September 2022, "I'm in profit! Oh wait, nevermind."
+      </p>
+      <p class="font-sans text-base hover:font-bold hover:text-xl">
+          Ali Movasaghpour, December 2022, "I sure could go for some McDonald's right now."
+      </p>
+  </div>
+  </body>
+  <br>
+  <p>This site was co-created by zw1ce.</p>
+    <!-- Toggle submenu function -->
+    <script>
+      function toggleSubMenu() {
+        var submenu = document.getElementById('submenu');
+        if (submenu.style.display === 'none') {
+          submenu.style.display = 'block';
+        } else {
+          submenu.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>
+
